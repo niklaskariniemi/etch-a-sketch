@@ -1,8 +1,8 @@
 // initialize variables
-let gridSize = 0;
+let gridSize = 256;
 
 // initialize grid
-
+grid( gridSize );
 
 // function creates grid
 function grid( gridSize ){
