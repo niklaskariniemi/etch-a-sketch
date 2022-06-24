@@ -10,7 +10,7 @@
 
   .container-grid {
     display: grid;
-    grid-template-columns: repeat(32, 25px [col-start]);
+    grid-template-columns: repeat(24, 25px [col-start]);
     background-color: #ffebcd;
   }
 
