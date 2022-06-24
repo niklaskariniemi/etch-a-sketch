@@ -1,12 +1,16 @@
-// function that creates 16x16 grid
-function grid(){
-    const cdiv = document.querySelector('.container');
+// add button when clicked prompts the user
 
-    for (let i = 1; i < 257; i++) {
-        const div = document.createElement('div');
-        div.style.cssText = "border: 1px solid black; background:#ffebcd; height: 25px; width: 25px";  
-        cdiv.appendChild(div);
-    }
+
+// create grid
+const cdiv = document.querySelector('.container');
+
+for (let i = 1; i < gridsize; i++) {
+    const div = document.createElement('div');
+    div.style.cssText = "background:#ffebcd; height: 25px; width: 25px"; 
+
+    // add event listeners for when hovering over grid
+    div.addEventListener('mouseover', () => {
+        div.style.cssText = "background: #1ecbe1";
+    });
+    cdiv.appendChild(div);
 }
-
-grid()
